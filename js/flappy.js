@@ -79,7 +79,7 @@ function Passaro(alturaJogo) {
     window.onkeyup = e => voando = false
 
     this.animar = () => {
-        const novoY = this.getY() + (voando ? 5 : -5)
+        const novoY = this.getY() + (voando ? 5 : -8) //altera o voo do passaro
         const alturaMaxima = alturaJogo - this.elemento.clientHeight
 
         if (novoY <= 0) {
@@ -134,7 +134,7 @@ function FlappyBird() {
     const largura = areaDoJogo.clientWidth
 
     const progresso = new Progresso()
-    const barreiras = new Barreiras(altura, largura, 200, 400,
+    const barreiras = new Barreiras(altura, largura, 200, 400, //altera o tamanho da passagem entre as barreiras e a distência entre elas.
         () => progresso.atualizarPontos(++pontos))
     const passaro = new Passaro(altura)
 
