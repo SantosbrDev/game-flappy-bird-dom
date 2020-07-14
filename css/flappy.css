@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
+    text-align: -moz-center;
+    text-align: -webkit-center;
 }
 
 @font-face {
     font-family: 'Pixel';
-    src: url('../fonts/Pixel.ttf');
+    src: url('../font/Pixel.ttf');
 }
 
 [flappy] {
     position: relative;
     border: 5px solid dodgerblue;
-    height: 900px;
-    width: 1200px;
+    height: 70vh;
+    width: 70vw;
     margin: 15px;
     border-radius: 25px;
     background-color: deepskyblue;
